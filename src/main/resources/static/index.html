@@ -24,13 +24,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <script src="/webjars/sockjs-client/sockjs.min.js"></script>
         <script src="/webjars/stomp-websocket/stomp.min.js"></script>
         <script src="/app.js"></script>
-
-    </head>
-
-
-    
+        
+    </head>    
     <body>
-        <div>TODO write content</div>
-        <button onclick="sendPoint()">send point</button>
+        <label for="x">punto x</label>
+        <input type="text" id="x" placeholder="Escribir x aqui">
+        <label for="y">punto y</label>
+        <input type="text" id="y" placeholder="Escribir y aqui">
+        
+        <button id="send" type="submit">Enviar pto</button>
+        <button id="connect" type="submit">conectar</button>
+        <button id="disconnect" type="submit">desconectar</button>
+        
+        <canvas id="canvaspage" width="800" height="600" style="border: 1px solid black;"></canvas>
     </body>
 </html>
